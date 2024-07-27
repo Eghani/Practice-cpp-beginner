@@ -6,7 +6,7 @@ Welcome to the "Practice-cpp-beginner" repository! This repository is designed t
 
 ### Table of Contents
 
-1. [Data Types and Variables](#datatypes_variable.cpp)
+1. [datatypes_variable.cpp](#datatypes_variable.cpp)
 2. [Operators and Expressions](#operators-and-expressions)
 3. [Control Flow](#control-flow)
 4. [Functions](#functions)
