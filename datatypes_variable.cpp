@@ -110,17 +110,123 @@ int main ()
 // Problem: Write a C++ program that defines several constants using the const keyword for the gravitational constant (9.81), 
 // the speed of light (299792458), and Planck's constant (6.62607015e-34). Use these constants in calculations and display the results.
 
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Define constants
+    const double GRAVITATIONAL_CONSTANT = 9.81;
+    const double SPEED_OF_LIGHT = 299792458;
+    const double PLANCK_CONSTANT = 6.62607015e-34;
+    // 1. Calculate the force on an object of mass 10 kg in Earth's gravity
+    double mass = 10.0;
+    double force = mass * GRAVITATIONAL_CONSTANT;
+    // Display results
+    cout << "Force on 10 kg mass: " << force << " Newtons" << endl;
+    return 0;
+}
+
 // Array of Different Data Types
 // Problem: Write a C++ program that creates an array of int, float, and double types. 
 // Initialize the arrays with some values and print all elements of each array.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  // Create and initialize an array of int
+  int intArray[] = {1, 2, 3, 4, 5};
+  int intArraySize = sizeof(intArray) / sizeof(intArray[0]);
+
+  // Create and initialize an array of float
+  float floatArray[] = {1.1f, 2.2f, 3.3f, 4.4f, 5.5f};
+  // f indicate float type
+  int floatArraySize = sizeof(floatArray) / sizeof(floatArray[0]);
+
+  // Create and initialize an array of double
+  double doubleArray[] = {1.11, 2.22, 3.33, 4.44, 5.55};
+  int doubleArraySize = sizeof(doubleArray) / sizeof(doubleArray[0]);
+
+  // Print elements of int array
+  cout << "Elements of int array: ";
+  for (int i = 0; i < intArraySize; i++)
+  {
+    cout << intArray[i] << " ";
+  }
+  cout << endl;
+
+  // Print elements of float array
+  cout << "Elements of float array: ";
+  for (int i = 0; i < floatArraySize; i++)
+  {
+    cout << floatArray[i] << " ";
+  }
+  cout << endl;
+
+  // Print elements of double array
+  cout << "Elements of double array: ";
+  for (int i = 0; i < doubleArraySize; i++)
+  {
+    cout << doubleArray[i] << " ";
+  }
+  cout << endl;
+
+  return 0;
+}
 
 // Enum and Switch Statement
 // Problem: Write a C++ program that defines an enum type for different types of weather (Sunny, Rainy, Cloudy).
 //  Use a switch statement to print a message based on the value of a weather variable.
 
+
+#include<iostream>
+#include<string>
+using namespace std;
+// dec of enum
+enum weather{
+  sunny,
+  rainy,
+  cloudy,
+  invalid
+};
+int main ()
+{
+  string input;
+  cout<<"ENter the weather (sunny, rainy, cloudy)"<<endl;
+  cin>>input;
+
+  weather today;
+  if (input == "sunny") today = sunny;
+    else if (input == "rainy") today = rainy;
+    else if (input == "cloudy") today = cloudy;
+    else today = invalid;
+
+     switch (today) {
+        case sunny:
+            cout << "It's a sunny day!" << endl;
+            break;
+        case rainy:
+            cout << "It's raining outside." << endl;
+            break;
+        case cloudy:
+            cout << "The sky is cloudy." << endl;
+            break;
+        case invalid:
+        default:
+            cout << "Invalid weather condition." << endl;
+            break;
+    }
+  
+  return 0;
+}
+
+
 // Type Aliases and Complex Expressions
 // Problem: Write a C++ program that uses typedef or using to create type aliases for unsigned long long, double, and float.
 //  Use these aliases to declare variables and perform complex expressions involving arithmetic operations, then print the results.
 
+
+// try it by yourself 
 
 // These problems will help you deepen your understanding of C++ data types and variables while progressively challenging your skills.
