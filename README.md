@@ -13,7 +13,7 @@ Welcome to the "Practice-cpp-beginner" repository! This repository is designed t
 
 ## Running
 
-3. [Control Flow (ALl)](Control_Flow)
+3. [Control Flow ( ALL )](Control_FLow)
 
 ## Upcoming 
 
