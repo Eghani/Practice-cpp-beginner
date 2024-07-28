@@ -6,9 +6,17 @@ Welcome to the "Practice-cpp-beginner" repository! This repository is designed t
 
 ### Table of Contents
 
+## Completed
+
 1. [Data types and Vaeiables](datatypes_variable.cpp)
-2. [Operators and Expressions](#operators-and-expressions)
+2. [Operators and Expressions](operators_expressions.cpp)
+
+## Running
+
 3. [Control Flow](#control-flow)
+
+## Upcoming 
+
 4. [Functions](#functions)
 5. [Arrays and Strings](#arrays-and-strings)
 6. [Pointers](#pointers)
