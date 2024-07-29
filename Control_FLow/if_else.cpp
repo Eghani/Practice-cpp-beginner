@@ -104,15 +104,82 @@ int main()
 
 // Write a program that takes a character input from the user and checks whether it is a vowel or a consonant. (Consider both uppercase and lowercase letters.)
 
+#include <iostream>
+using namespace std;
+int main()
+{
+    char alp;
+    cout << "please enter the alphabet " << endl;
+    cin >> alp;
+
+    if ((alp == 'a') || (alp == 'e') || (alp == 'i') || (alp == 'o') || (alp == 'u') || (alp == 'A') || (alp == 'E') || (alp == 'I') || (alp == 'O') || (alp == 'U'))
+    {
+        cout << "VOWEL" << endl;
+    }
+    else
+    {
+        cout << "CONSUNENT" << endl;
+    }
+
+    return 0;
+}
 
 // Write a program that takes a year as input and checks whether it is a leap year. A year is a leap year if it is divisible by 4 but not by 100, except if it is also divisible by 400.
 
+#include <iostream>
+using namespace std;
+int main()
+{
+    int yr;
+    cout << "enter the year " << endl;
+    cin >> yr;
+
+    if ((yr % 4 == 0) && (yr % 100 != 0) || (yr % 400 == 0))
+    {
+        cout << "the year is leap year " << endl;
+    }
+    else
+    {
+        cout << "the year is non leap year " << endl;
+    }
+    return 0;
+}
 
 // Write a program that takes an age as input and classifies the person into one of the following categories:
 // Child (0-12 years)
 // Teenager (13-19 years)
 // Adult (20-59 years)
 // Senior (60+ years)
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int age;
+    cout << "Enter your age please :- " << endl;
+    cin >> age;
+
+    if (age > 0 && age <= 12) {
+        cout << "Child" << endl;
+    } 
+    else if (age >= 13 && age <= 19) {
+        cout << "Teenager" << endl;
+    } 
+    else if (age >= 20 && age <= 59) {
+        cout << "Adult" << endl;
+    } 
+    else if (age >= 60) {
+        cout << "Senior" << endl;
+    } 
+    else {
+        cout << "Invalid age" << endl;
+    }
+
+    return 0;
+}
+
 
 
 
