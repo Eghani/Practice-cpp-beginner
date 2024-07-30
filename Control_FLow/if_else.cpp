@@ -185,6 +185,41 @@ int main()
 
 // Write a program that takes two integers and a character (+, -, *, /) as input and performs the corresponding arithmetic operation. Print the result. (Handle division by zero appropriately.)
 
+#include <iostream>
+using namespace std;
+int main() {
+    int num1, num2;
+    char operation;
+    cout << "Enter two integers: ";
+    cin >> num1 >> num2;
+    cout << "Enter an arithmetic operation (+, -, *, /): ";
+    cin >> operation;
+
+    switch (operation) {
+        case '+':
+            cout << "Result: " << num1 + num2 <<endl;
+            break;
+        case '-':
+            cout << "Result: " << num1 - num2 << endl;
+            break;
+        case '*':
+            cout << "Result: " << num1 * num2 << endl;
+            break;
+        case '/':
+            if (num2 != 0) {
+            cout << "Result: " << num1 / num2 << endl;
+            } else {
+                cout << "Error: Division by zero is not allowed." << endl;
+            }
+            break;
+        default:
+            cout << "Error: Invalid operation." <<endl;
+            break;
+    }
+
+    return 0;
+}
+
 
 // Write a program that takes a student's score as input and assigns a grade based on the following criteria:
 // A (90-100)
@@ -194,7 +229,61 @@ int main()
 // F (below 60)
 
 
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int score;
+
+    cout << "Enter your score: ";
+    cin >> score;
+
+    if (score >= 90 && score <= 100) {
+        cout << "Grade: A" << endl;
+    } else if (score >= 80 && score < 90) {
+        cout << "Grade: B" << endl;
+    } else if (score >= 70 && score < 80) {
+        cout << "Grade: C" << endl;
+    } else if (score >= 60 && score < 70) {
+        cout << "Grade: D" << endl;
+    } else if (score < 60) {
+        cout << "Grade: F" << endl;
+    } else {
+        cout << "Invalid score" << endl;
+    }
+
+    return 0;
+}
+
+
+
 // Write a program that takes the lengths of three sides of a triangle as input and determines whether the triangle is equilateral, isosceles, or scalene.
+
+// here are some details
 // Equilateral: All three sides are equal.
 // Isosceles: Two sides are equal.
 // Scalene: All sides are different.
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int side1, side2, side3;
+
+    cout << "Enter the lengths of three sides of a triangle: ";
+    cin >> side1 >> side2 >> side3;
+
+    if (side1 == side2 && side2 == side3) {
+        cout << "The triangle is Equilateral." << endl;
+    } else if (side1 == side2 || side2 == side3 || side1 == side3) {
+        cout << "The triangle is Isosceles." << endl;
+    } else {
+        cout << "The triangle is Scalene." << endl;
+    }
+
+    return 0;
+}
