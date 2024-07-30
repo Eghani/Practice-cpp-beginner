@@ -195,6 +195,8 @@ int main() {
     cout << "Enter an arithmetic operation (+, -, *, /): ";
     cin >> operation;
 
+    // an early example of using switch case statement 
+
     switch (operation) {
         case '+':
             cout << "Result: " << num1 + num2 <<endl;
