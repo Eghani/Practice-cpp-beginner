@@ -25,4 +25,39 @@ int main() {
 
     return 0;
 }
+
+
+
+
+// Write a program that takes two integers and a character (+, -, *, /) as input and performs 
+// the corresponding arithmetic operation using a switch statement. Print the result. (Handle division by zero appropriately.)
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2;
+    char op;
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+    cout << "Enter an operator (+, -, *, /): ";
+    cin >> op;
+
+    switch(op) {
+        case '+': cout << "Result: " << num1 + num2; break;
+        case '-': cout << "Result: " << num1 - num2; break;
+        case '*': cout << "Result: " << num1 * num2; break;
+        case '/': 
+            if (num2 != 0)
+                cout << "Result: " << num1 / num2; 
+            else
+                cout << "Cannot divide by zero"; 
+            break;
+        default: cout << "Invalid operator"; break;
+    }
+
+    return 0;
+}
+
  
