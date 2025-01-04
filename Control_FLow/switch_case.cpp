@@ -28,7 +28,6 @@ int main() {
 
 
 
-
 // Write a program that takes two integers and a character (+, -, *, /) as input and performs 
 // the corresponding arithmetic operation using a switch statement. Print the result. (Handle division by zero appropriately.)
 
@@ -60,4 +59,9 @@ int main() {
     return 0;
 }
 
- 
+
+
+// Write a C++ program that asks the user to input a grade (A, B, C, D, or F) and outputs a corresponding message based on the grade. Use a switch statement for the logic.
+
+
+
