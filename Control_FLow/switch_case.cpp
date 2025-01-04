@@ -64,4 +64,24 @@ int main() {
 // Write a C++ program that asks the user to input a grade (A, B, C, D, or F) and outputs a corresponding message based on the grade. Use a switch statement for the logic.
 
 
+#include <iostream>
+using namespace std;
+
+int main() {
+    char grade;
+    cout << "Enter a grade (A, B, C, D, F): ";
+    cin >> grade;
+
+    switch (grade) {
+        case 'A': cout << "Excellent!"; break;
+        case 'B': cout << "Good job!"; break;
+        case 'C': cout << "Fair effort!"; break;
+        case 'D': cout << "Needs improvement!"; break;
+        case 'F': cout << "Failed!"; break;
+        default: cout << "Invalid grade."; break;
+    }
+
+    return 0;
+}
+
 
